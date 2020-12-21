@@ -8,6 +8,13 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-function reverseInt(n) {}
+function reverseInt(n) {
+
+    return n < 0 ? -1 * parseInt(n.toString().split('').reverse().join('')) : parseInt(n.toString().split('').reverse().join(''))
+}
 
 module.exports = reverseInt;
+
+/*
+It looks like I need to turn this into a string, reverse it, then turn it back into an integer
+*/

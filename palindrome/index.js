@@ -7,6 +7,16 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+function palindrome(str) {
+    return str == str.split('').reverse().join('')
+}
+
+
 
 module.exports = palindrome;
+
+/*
+    abba 
+    I could do .split and compare the two arrays using reverse, but that is too easy
+    
+*/
