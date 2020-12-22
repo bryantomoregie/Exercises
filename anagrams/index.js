@@ -19,11 +19,11 @@ function anagrams(stringA, stringB) {
     }
 
     for(let character of word1){
-        obj1[character] = obj1[character] + 1 || obj1[character]
+        obj1[character] = obj1[character] + 1 || 1
     }
 
     for(let character of word2){
-         obj2[character] = obj2[character] + 1 || obj2[character]
+         obj2[character] = obj2[character] + 1 || 1
     }
 
     for(let character in obj1){

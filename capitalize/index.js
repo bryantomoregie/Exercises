@@ -7,6 +7,20 @@
 //   capitalize('a lazy fox') --> 'A Lazy Fox'
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
-function capitalize(str) {}
+function capitalize(str) {
+    let strArray = str.split(' ');
+    let newArray = [];
+
+    for(let word of strArray){
+        newArray.push(word[0].toUpperCase() + word.slice(1));
+    }
+
+    return newArray.join(' ')
+}
 
 module.exports = capitalize;
+
+/*
+    capitalize the first letter in each word of a string and return the string
+    I will array, join, capitalize
+*/
